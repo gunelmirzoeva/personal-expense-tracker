@@ -12,6 +12,7 @@ target/
 *.iml
 *.ipr
 src/main/java/org/example/config/
+.idea/
 
 
 ### Eclipse ###
