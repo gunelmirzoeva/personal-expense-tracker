@@ -16,6 +16,9 @@ public class Expense {
         this.categoryId = categoryId;
         this.description = description;
     }
+    public Expense(){
+        this.id = 0;
+    }
 
     public int getId() {
         return id;

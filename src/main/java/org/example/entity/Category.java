@@ -9,6 +9,9 @@ public class Category {
         this.name = name;
     }
 
+    public Category(){
+        this.id = 0;
+    }
     public int getId() {
         return id;
     }

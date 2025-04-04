@@ -3,17 +3,26 @@ package org.example.dto;
 import java.time.LocalDate;
 
 public class ExpenseDto {
+    private final int id;
     private double amount;
     private LocalDate expenseDate;
     private int categoryId;
     private String description;
 
-    public ExpenseDto(double amount, LocalDate expenseDate, int categoryId, String description) {
+    public ExpenseDto(int id, double amount, LocalDate expenseDate, int categoryId, String description) {
+        this.id = id;
         this.amount = amount;
         this.expenseDate = expenseDate;
         this.categoryId = categoryId;
         this.description = description;
     }
+
+
+    public ExpenseDto(double amount, LocalDate expenseDate, int categoryId, String description) {
+        this(0, amount, expenseDate, categoryId, description);
+    }
+
+    public int getId() { return id; }
 
     public double getAmount() {
         return amount;
